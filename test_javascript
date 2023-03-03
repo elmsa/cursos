@@ -1,0 +1,143 @@
+Variables y operaciones
+1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+¿Qué es una variable y para qué sirve? 
+Es un espacio en memoria, para guardar un valor en esa variable.
+¿Cuál es la diferencia entre declarar e inicializar una variable?.
+
+	El dclarar solo guarda espacio en memoriam, inicializar asigna el valor a la variable.
+¿Cuál es la diferencia entre sumar números y concatenar strings?
+Es la operación matemática para sumar variables enteras, concatenar es para unir palabras o frases una tras otra.
+¿Cuál operador me permite sumar o concatenar?
++
+Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
+Nombre String
+Apellidostring
+Nombre de usuario en Platzi string
+Edad Number
+Correo electrónico string
+Mayor de edad Boolean
+Dinero ahorrado Number
+Deudas Number
+Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
+
+Var Nombre =””;
+Var Apellidos =””;
+Var usuario_platiz=””;
+Var Edad  =30;
+Var Correo electrónico =””;
+Var Mayor_edad = true;
+Var Dinero_ahorrado =12200;
+Var Deudas =0;
+Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
+Nombre completo (nombre y apellido)
+Var Nombre=”Elmer”;
+Var Apellidos=”Sandoval Acosta”;
+Console.log(“Mis datos son:”+Nombre+” ”Apellidos);
+Dinero real (dinero ahorrado menos deudas)
+
+¿Qué es una función?
+Son un bloque de código definido en un fragmento de código para ser reusado para resikver un problema.
+¿Cuándo me sirve usar una función en mi código?
+Cuando queremos realizar ciertas acciones con los valores ya guarados en las variables.
+¿Cuál es la diferencia entre parámetros y argumentos de una función?
+Parámetros son valores que una función u operaciones espera para poder ser llamado.
+Argumento: es un objeto similar a un array accesible dentro de funciones.
+
+Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
+const name = "Juan David";
+const lastname = "Castro Gallego";
+const completeName = name + lastname;
+const nickname = "juandc";
+
+console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+
+
+Responde las siguientes preguntas en la sección de comentarios:
+¿Qué es un condicional?
+	Es una estructura de control que te permiten evaluar diferentes expresiones y realizar determinadas acciones.
+
+¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+If: evalúa si una expresión o condición es verdadera, else: evalúa cuando la expresión del if es falsa, pero no es obligatorio colocarlo, else if:se usa para mas de dos condiciones o varias a la vez. 
+Switch: evalúa una expresión, comparando el valor de esa expresión con una instancia case, y ejecuta declaraciones asociadas a ese case, así como las declaraciones en los case que siguen.
+
+¿Puedo combinar funciones y condicionales?
+Si
+
+
+Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
+let typeSuscripción = [
+"Free",
+"Basic", 
+"Expert", 
+"ExpertPlus"
+];
+let infoSuscripción = [
+"solo puedes tomar los cursos gratis", 
+"puedes tomar casi todos los cursos de Platzi durante un mes", 
+"puedes tomar casi todos los cursos de Platzi durante un año", 
+"tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"];
+let userSuscription = "Expert";
+for (let i=0; i < typeSuscripción.length; i++) {
+  if (userSuscription == typeSuscripción[i]) {
+  	console.log(`Si estas suscrito al plan ${typeSuscripción[i]} en el cual ${infoSuscripción[i]}`)
+  }
+}
+
+ 
+Responde las siguientes preguntas en la sección de comentarios:
+¿Qué es un ciclo? 
+Es una estructura de control que te permite realizar una o varias instrucciones mientras una condición sea verdadera.
+¿Qué tipos de ciclos existen en JavaScript? 
+Ciclo for y ciclo while
+¿Qué es un ciclo infinito y por qué es un problema?
+Es lo que ocurre si en un bucle se nos olvida incrementar la variable contador o escribimos una condición que nunca se puede dar. El bucle se queda eternamente repitiéndose y el programa se queda «colgado».
+¿Puedo mezclar ciclos y condicionales?
+Si 
+
+Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+var meta=5, i=0;
+while (i<meta){
+  console.log(`El valor de i: ${i}`);
+  i++;
+}
+
+console.log('----------------');
+
+var meta2=2, j=10;
+while (meta2<=j){
+  console.log(`El valor de i: ${j}`);
+  j--;
+}
+ 
+Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
+💡 Pista: puedes usar la función prompt de JavaScript.
+function Quizzer() {
+  let userInput = prompt(questions.q1);
+  if (userInput == result) {
+    alert("Felicitaciones, respondiste correctamente el desafio 😎");
+  } else {
+    alert("lamentablemente, tu respuesta es incorrecta, sigue practicando ❌!");
+  }
+}
+Quizzer();
+ 
+¿Qué es un array?
+	Son listas que pueden contener objetos, string, números,etc
+¿Qué es un objeto?
+	Es una estructura de datos que permite almacenar valores mediante propiedad - valor a través de la sintaxis de llaves ({}) y separados por comas.
+¿Cuándo es mejor usar objetos o arrays?
+	Los arrays se usan para series que poseen valores simples, mientras que los objetos son utilizadas para las series en que hay distintos objetos y propiedades con diferentes valores.
+¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+let vobj = {
+  nombre: 'JuanDC',
+  edad: 20,
+  hobbie: 'enseñar',
+};
+
+functionshowElements(vobj) {
+  returnObject.entries(obj).forEach((element) => {
+    console.log(element);
+  });
+}
+showElements(obj);
